@@ -12,7 +12,7 @@ allprojects {
 
 specmatic {
     publishToMavenCentral()
-    releasePublishTasks = listOf(":check", ":publishAllPublicationsToMavenCentralRepository", ":dockerBuild")
+    releasePublishTasks = listOf("check", "publishAllPublicationsToMavenCentralRepository", "dockerBuild")
     publishTo("specmaticPrivate", "https://maven.pkg.github.com/znsio/specmatic-private-maven-repo")
     withOSSLibrary(project(":specmatic-core")) {
         githubRelease()
