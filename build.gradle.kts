@@ -103,9 +103,7 @@ specmatic {
 
 tasks.beforeReleaseBuild {
     dependsOn(
-        "specmatic-executable:check",
-        "junit5-support:check",
-        "specmatic-core:check"
+        ":check",
     )
 }
 
@@ -117,9 +115,9 @@ tasks.afterReleaseBuild {
 //    )
 //
     dependsOn(
-        "specmatic-executable:publishAllPublicationsToMavenCentralRepository",
-        "junit5-support:publishAllPublicationsToMavenCentralRepository",
-        "specmatic-core:publishAllPublicationsToMavenCentralRepository"
+        ":publishAllPublicationsToMavenCentralRepository",
+        ":publishAllPublicationsToMavenCentralRepository",
+        ":publishAllPublicationsToMavenCentralRepository"
     )
 
     dependsOn("specmatic-executable:dockerBuild")
