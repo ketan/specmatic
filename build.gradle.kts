@@ -102,7 +102,6 @@ specmatic {
 }
 tasks.beforeReleaseBuild {
     dependsOn("check")
-
 }
 
 tasks.afterReleaseBuild {
