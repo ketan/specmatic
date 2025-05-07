@@ -105,17 +105,17 @@ tasks.beforeReleaseBuild {
 }
 
 tasks.afterReleaseBuild {
-    dependsOn(
-        "specmatic-executable:publishAllPublicationsToSpecmaticPrivateRepository",
-        "junit5-support:publishAllPublicationsToSpecmaticPrivateRepository",
-        "specmatic-core:publishAllPublicationsToSpecmaticPrivateRepository"
-    )
-
-    dependsOn(
-        "specmatic-executable:publishAllPublicationsToMavenCentralRepository",
-        "junit5-support:publishAllPublicationsToMavenCentralRepository",
-        "specmatic-core:publishAllPublicationsToMavenCentralRepository"
-    )
-
-    dependsOn("specmatic-executable:dockerBuildxPublish")
+//    dependsOn(
+//        "specmatic-executable:publishAllPublicationsToSpecmaticPrivateRepository",
+//        "junit5-support:publishAllPublicationsToSpecmaticPrivateRepository",
+//        "specmatic-core:publishAllPublicationsToSpecmaticPrivateRepository"
+//    )
+//
+//    dependsOn(
+//        "specmatic-executable:publishAllPublicationsToMavenCentralRepository",
+//        "junit5-support:publishAllPublicationsToMavenCentralRepository",
+//        "specmatic-core:publishAllPublicationsToMavenCentralRepository"
+//    )
+//
+//    dependsOn("specmatic-executable:dockerBuildxPublish")
 }
