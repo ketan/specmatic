@@ -121,5 +121,5 @@ tasks.afterReleaseBuild {
 }
 
 release {
-    failOnSnapshotDependencies = false
+    checkForPreReleaseVersions = false
 }
