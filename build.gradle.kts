@@ -100,8 +100,12 @@ specmatic {
         }
     }
 }
-tasks.onReleaseBuild {
+
+tasks.beforeReleaseBuild {
     dependsOn("check")
+}
+
+tasks.afterReleaseBuild {
 //    dependsOn(
 //        "specmatic-executable:publishAllPublicationsToSpecmaticPrivateRepository",
 //        "junit5-support:publishAllPublicationsToSpecmaticPrivateRepository",
@@ -118,5 +122,5 @@ tasks.onReleaseBuild {
 }
 
 release {
-    checkForPreReleaseVersions = false
+    failOnSnapshotDependencies = false
 }
