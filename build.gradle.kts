@@ -124,3 +124,7 @@ tasks.afterReleaseBuild {
 
     dependsOn("specmatic-executable:dockerBuild")
 }
+
+release {
+    failOnSnapshotDependencies = false
+}
