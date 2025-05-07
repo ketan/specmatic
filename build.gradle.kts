@@ -117,5 +117,5 @@ tasks.afterReleaseBuild {
 //        "specmatic-core:publishAllPublicationsToMavenCentralRepository"
 //    )
 //
-//    dependsOn("specmatic-executable:dockerBuildxPublish")
+    dependsOn("specmatic-executable:dockerBuild")
 }
