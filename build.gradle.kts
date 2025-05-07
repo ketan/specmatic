@@ -101,11 +101,7 @@ specmatic {
     }
 }
 tasks.beforeReleaseBuild {
-    dependsOn(
-        "specmatic-executable:check",
-        "junit5-support:check",
-        "specmatic-core:check"
-    )
+    dependsOn("check")
 
 }
 
